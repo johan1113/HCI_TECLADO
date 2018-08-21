@@ -1,5 +1,14 @@
 import processing.core.PApplet;
 
+/**
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ $Id$
+ * Universidad Icesi (Cali - Colombia) Experimento 1 - HCI
+ * 
+ * @author Johan Sebastian Medina
+ * @version 21/08/2018
+ *          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
 public class MainAppExpUno extends PApplet {
 
 	private Logica l;
@@ -22,12 +31,12 @@ public class MainAppExpUno extends PApplet {
 		l.pantallas();
 		frameRate(56);
 	}
-	
+
 	public void mouseClicked() {
 		l.mouse();
 		System.out.println("mouse X: " + mouseX + " mouseY: " + mouseY);
 	}
-	
+
 	public void keyReleased() {
 		l.teclas();
 	}
