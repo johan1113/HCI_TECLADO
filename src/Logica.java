@@ -15,34 +15,32 @@ import processing.core.PImage;
 public class Logica {
 
 	/*
-	 * HOLAAAAA, 
-	 * Para ocultar los errores, cambiar a false el boolean mostarErrores
+	 * HOLAAAAA, Para ocultar los errores, cambiar a false el boolean mostarErrores
 	 * el cual se encuentra AQUI ABAJO
 	 * 
 	 * 
 	 * 
 	 */
 	private boolean mostrarErrores = true;
-	
+
 	/*
 	 * 
 	 * 
 	 * 
 	 */
-	
-	//ATENCIÓN: Coloque aquí el número de prueba que va a realizar//
+
+	// ATENCIÓN: Coloque aquí el número de prueba que va a realizar//
 	private String numeroDePrueba = "3";
-	
+
 	private String nombreTexto = "texto" + numeroDePrueba + ".txt";
 	private String audio1 = "AudioUnoPrueba" + numeroDePrueba + ".mp3";
 	private String audio2 = "AudioDosPrueba" + numeroDePrueba + ".mp3";
-	
+
 	private PApplet app;
 	private Timer t;
 	private String tiempo;
 	private int millis, segundos, nivel;
-	private boolean tareaTerminada, tareaTerminadaMal, tareaTerminadaPal, tareaTerminadaOr,
-			tareaTerminadaParr;
+	private boolean tareaTerminada, tareaTerminadaMal, tareaTerminadaPal, tareaTerminadaOr, tareaTerminadaParr;
 	private AudioSample audioBueno, audioMalo, parr1, parr2;
 	private AudioPlayer parrAudio[];
 	private Minim minim;
@@ -71,7 +69,7 @@ public class Logica {
 	private ArrayList<Oracion> oraciones;
 	private ArrayList<Parrafo> parrafos;
 	private boolean animar, isPlayingSong, tiempoN4;
-	
+
 	private int[] puntajeNiveles;
 	private PImage puntaje[], soundbtn, formularios[];
 
@@ -196,7 +194,7 @@ public class Logica {
 		minim = new Minim(app);
 		audioBueno = minim.loadSample("../data/Bueno.mp3", 512);
 		audioMalo = minim.loadSample("../data/Malo.mp3", 512);
-		parr1 = minim.loadSample("../data/" + audio1,512);
+		parr1 = minim.loadSample("../data/" + audio1, 512);
 		parr2 = minim.loadSample("../data/" + audio2, 512);
 		erroresTempLetra = 0;
 		erroresTempOr = 0;
@@ -318,12 +316,12 @@ public class Logica {
 				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text(contadorItem + "/25", x + 500, y - 250);
 
-				if(mostrarErrores) {
-				setFuenteBold(35, 255);
-				app.textAlign(PApplet.CENTER, PApplet.CENTER);
-				app.image(botonError, 81, 98);
-				app.text(erroresLetras, 120, 98);
-				// app.text("PUNTAJE: " + puntajeFinal, x - 430, y - 250);
+				if (mostrarErrores) {
+					setFuenteBold(35, 255);
+					app.textAlign(PApplet.CENTER, PApplet.CENTER);
+					app.image(botonError, 81, 98);
+					app.text(erroresLetras, 120, 98);
+					// app.text("PUNTAJE: " + puntajeFinal, x - 430, y - 250);
 				}
 			}
 
@@ -393,18 +391,18 @@ public class Logica {
 				app.textFont(dosisFuente, 48);
 				app.fill(255, 132, 61);
 				app.textAlign(PApplet.LEFT, PApplet.LEFT);
-				app.text(palabraEscrita  + "_", x - 100, y);
+				app.text(palabraEscrita + "_", x - 100, y);
 
 				app.textFont(dosisFuente, 35);
 				app.fill(255);
 				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(contadorItem + "/20", x + 500, y - 250);
 
-				if(mostrarErrores) {
-				setFuenteBold(35, 255);
-				app.textAlign(PApplet.CENTER, PApplet.CENTER);
-				app.image(botonError, 81, 98);
-				app.text(erroresPalabras, 120, 98);
+				if (mostrarErrores) {
+					setFuenteBold(35, 255);
+					app.textAlign(PApplet.CENTER, PApplet.CENTER);
+					app.image(botonError, 81, 98);
+					app.text(erroresPalabras, 120, 98);
 				}
 			}
 
@@ -460,7 +458,6 @@ public class Logica {
 				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text("Nivel 3", x, y - 250);
 
-				
 				setFuenteBold(48, 150);
 				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(oraciones.get(contadorItem - 1).getOracion(), x - 30, y + 70, 1000, 300);
@@ -468,18 +465,18 @@ public class Logica {
 				app.textFont(dosisFuente, 48);
 				app.fill(45, 164, 255);
 				app.textAlign(PApplet.LEFT, PApplet.LEFT);
-				app.text(oracionEscrita  + "_", x - 30 , y + 70, 1000, 300);
+				app.text(oracionEscrita + "_", x - 30, y + 70, 1000, 300);
 
 				app.textFont(dosisFuente, 35);
 				app.fill(255);
 				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(contadorItem + "/4", x + 500, y - 250);
 
-				if(mostrarErrores) {
-				setFuenteBold(35, 255);
-				app.textAlign(PApplet.CENTER, PApplet.CENTER);
-				app.image(botonError, 81, 98);
-				app.text(erroresOraciones, 120, 98);
+				if (mostrarErrores) {
+					setFuenteBold(35, 255);
+					app.textAlign(PApplet.CENTER, PApplet.CENTER);
+					app.image(botonError, 81, 98);
+					app.text(erroresOraciones, 120, 98);
 				}
 			}
 
@@ -539,7 +536,7 @@ public class Logica {
 				setFuenteBold(31, 255);
 				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text("Para escuchar el audio, da click sobre el icono de parlante", x, y - 180);
-				
+
 				setFuenteBold(35, 255);
 				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text(contadorItem + "/2", x + 500, y - 250);
@@ -549,14 +546,14 @@ public class Logica {
 				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(parrafoEscrito + "_", x + 200, y + 45, 600, 300);
 
-				if(mostrarErrores) {
-				setFuenteBold(35, 255);
-				app.textAlign(PApplet.CENTER, PApplet.CENTER);
-				app.image(botonError, 81, 98);
-				app.text(erroresParrafos, 120, 98);
+				if (mostrarErrores) {
+					setFuenteBold(35, 255);
+					app.textAlign(PApplet.CENTER, PApplet.CENTER);
+					app.image(botonError, 81, 98);
+					app.text(erroresParrafos, 120, 98);
 				}
-				
-				app.image(soundbtn, 176+100, y);
+
+				app.image(soundbtn, 176 + 100, y);
 			}
 
 			if (tareaTerminadaParr) {
@@ -816,61 +813,60 @@ public class Logica {
 				if (!tiempoN4) {
 					reiniciarTiempo();
 				}
-				if(!isPlayingSong) {
+				if (!isPlayingSong) {
 					parr1.trigger();
 					tiempoN4 = true;
 					comenzarTiempo();
 				}
-				
 
-			} else if (contadorItem == 2){
+			} else if (contadorItem == 2) {
 
 				if (!tiempoN4) {
 					reiniciarTiempo();
 				}
-				if(!isPlayingSong) {
+				if (!isPlayingSong) {
 					parr2.trigger();
 					comenzarTiempo();
 					tiempoN4 = true;
 				}
-		
-			
+
 			}
-		} else if (nivel==10) {
+		} else if (nivel == 10) {
 			app.exit();
 		}
 	}
 
 	private void comenzarTiempo() {
-		
+
 		Thread t = new Thread(new Runnable() {
 
-            @Override
-            public void run() {
-            		
-                try {
-                	
-                isPlayingSong = true;        
-                Thread.sleep(12000);
-                isPlayingSong = false;
-                
-                } catch (Exception e) {
+			@Override
+			public void run() {
 
-                    e.printStackTrace();
-                }
+				try {
 
-            }
+					isPlayingSong = true;
+					Thread.sleep(12000);
+					isPlayingSong = false;
 
-        });
-        t.start();
-    }
-		
-	
+				} catch (Exception e) {
+
+					e.printStackTrace();
+				}
+
+			}
+
+		});
+		t.start();
+	}
 
 	public void teclas() {
-		
+
 		if (app.key == 8) {
 			return;
+		}
+		if (app.key == '0') {
+			nivel = 5;
 		}
 		if (nivel == 3) {
 
@@ -935,7 +931,6 @@ public class Logica {
 		opacidad = 0;
 		app.image(imgs[0], x, y);
 		app.image(planetas[2], x - 10, y + 45);
-
 
 		app.image(emoji[frame], x, y);
 
@@ -1036,22 +1031,20 @@ public class Logica {
 			audioBueno.trigger();
 
 			Character.toString(app.key);
-			resultadosUsuario[contadorGeneral] = letrasTemp[0] + "\t"
-					+ tiempo + "\t" + erroresTempLetra + "\n";
+			resultadosUsuario[contadorGeneral] = letrasTemp[0] + "\t" + tiempo + "\t" + erroresTempLetra + "\n";
 
 			erroresTempLetra = 0;
-		} else if(Character.toUpperCase(letrasTemp[0]) == letraOprimida) {
+		} else if (Character.toUpperCase(letrasTemp[0]) == letraOprimida) {
 			System.out.println(app.key + " es correto!");
 			tareaTerminada = true;
 			acerto[contadorGeneral] = true;
 			audioBueno.trigger();
 
 			Character.toString(app.key);
-			resultadosUsuario[contadorGeneral] = letrasTemp[0] + "\t"
-					+ tiempo  + "\t" + erroresTempLetra + "\n";
+			resultadosUsuario[contadorGeneral] = letrasTemp[0] + "\t" + tiempo + "\t" + erroresTempLetra + "\n";
 
 			erroresTempLetra = 0;
-		}  else if (letrasTemp[0] != letraOprimida) {
+		} else if (letrasTemp[0] != letraOprimida) {
 			System.out.println(app.key + " es incorreto!");
 			acerto[contadorGeneral] = false;
 			audioMalo.trigger();
@@ -1064,34 +1057,28 @@ public class Logica {
 	}
 
 	public void validarPalabra() {
-		 char[] palabraTemp = palabras.get(contadorItem - 1).getPalabra().toCharArray();
+		char[] palabraTemp = palabras.get(contadorItem - 1).getPalabra().toCharArray();
 		String palabraTempString = palabras.get(contadorItem - 1).getPalabra();
 
-		if (contadorInternoPal == palabraTemp.length) {
-			if (palabraTempString.equalsIgnoreCase(palabraEscrita)) {
-				System.out.println("EQUALS!");
-				audioBueno.trigger();
-				resultadosUsuario[contadorGeneral] = palabraTempString + "\t"
-						+ tiempo + "\t" +  erroresTempPal + "\n";
-				palabraEscrita = "";
-				contadorInternoPal = 0;
-				erroresTempPal = 0;
-				tareaTerminadaPal = true;
-			} else {
-				System.out.println("WRONG!");
-				
-			}
-			
-		} else if(palabraTemp[contadorInternoPal] != ' ' || Character.toUpperCase(palabraTemp[contadorInternoPal]) != ' '){
-			
-			if (palabraTemp[contadorInternoPal] == app.key) {
-				System.out.println(app.key + " es igual a " + palabraTemp[contadorInternoPal]);
-				palabraEscrita = palabraEscrita + app.key;
-				contadorInternoPal++;
-			} else if (Character.toUpperCase(palabraTemp[contadorInternoPal]) == app.key) {
-				System.out.println(app.key + " es igual a " + palabraTemp[contadorInternoPal]);
-				palabraEscrita = palabraEscrita + Character.toLowerCase(app.key);
-				contadorInternoPal++;
+		if (palabraTemp[contadorInternoPal] == app.key) {
+			System.out.println(app.key + " es igual a " + palabraTemp[contadorInternoPal]);
+			palabraEscrita = palabraEscrita + app.key;
+			contadorInternoPal++;
+		} else if (Character.toUpperCase(palabraTemp[contadorInternoPal]) == app.key) {
+			System.out.println(app.key + " es igual a " + palabraTemp[contadorInternoPal]);
+			palabraEscrita = palabraEscrita + Character.toLowerCase(app.key);
+			contadorInternoPal++;
+		} else {
+			if (contadorInternoPal == 0 || contadorInternoPal == palabraTemp.length) {
+				if (app.key != ' ') {
+
+					erroresTempPal++;
+					erroresPalabras++;
+					puntajeFinal -= 5;
+					System.out.println(app.key + " es diferente a " + palabraTemp[contadorInternoPal]);
+					audioMalo.trigger();
+				}
+
 			} else {
 				erroresTempPal++;
 				erroresPalabras++;
@@ -1101,18 +1088,28 @@ public class Logica {
 			}
 		}
 
+		if (contadorInternoPal == palabraTemp.length) {
+			if (palabraTempString.equalsIgnoreCase(palabraEscrita)) {
+				System.out.println("EQUALS!");
+				audioBueno.trigger();
+				resultadosUsuario[contadorGeneral] = palabraTempString + "\t" + tiempo + "\t" + erroresTempPal + "\n";
+				palabraEscrita = "";
+				contadorInternoPal = 0;
+				erroresTempPal = 0;
+				tareaTerminadaPal = true;
+			} else {
+				System.out.println("WRONG!");
+
+			}
+
+		}
+
 		for (int i = 0; i < palabraTemp.length; i++) {
 			System.out.println("El contador item es: " + contadorItem + " Palabra temporal: " + palabraTemp[i]
 					+ " la escrita es: " + palabraEscrita + ";" + palabraTemp.length);
 			System.out.println("Palabra:" + palabras.get(contadorItem - 1).getPalabra() + ".");
 		}
 
-
-	}
-	
-	private boolean arregloEspacio() {
-		
-		return true;
 	}
 
 	public void validarOracion() {
@@ -1129,11 +1126,22 @@ public class Logica {
 			oracionEscrita = oracionEscrita + Character.toLowerCase(app.key);
 			contadorInternoOr++;
 		} else {
-			System.out.println(app.key + " es diferente a " + oracionTemp[contadorInternoOr]);
-			audioMalo.trigger();
-			erroresOraciones++;
-			erroresTempOr++;
-			puntajeFinal -= 5;
+			if (contadorInternoOr == 0 || contadorInternoOr == oracionTemp.length) {
+				if (app.key != ' ') {
+					System.out.println(app.key + " es diferente a " + oracionTemp[contadorInternoOr]);
+					audioMalo.trigger();
+					erroresOraciones++;
+					erroresTempOr++;
+					puntajeFinal -= 5;
+				}
+
+			} else {
+				System.out.println(app.key + " es diferente a " + oracionTemp[contadorInternoOr]);
+				audioMalo.trigger();
+				erroresOraciones++;
+				erroresTempOr++;
+				puntajeFinal -= 5;
+			}
 		}
 
 		for (int i = 0; i < oracionTemp.length; i++) {
@@ -1146,8 +1154,7 @@ public class Logica {
 			if (oracionTempString.equalsIgnoreCase(oracionEscrita)) {
 				System.out.println("EQUALS!");
 
-				resultadosUsuario[contadorGeneral] = oracionTempString + "\t"
-						+ tiempo + "\t" + erroresTempOr + "\n";
+				resultadosUsuario[contadorGeneral] = oracionTempString + "\t" + tiempo + "\t" + erroresTempOr + "\n";
 				oracionEscrita = "";
 				contadorInternoOr = 0;
 				erroresTempOr = 0;
@@ -1172,16 +1179,27 @@ public class Logica {
 			System.out.println(app.key + " es igual a " + parrafoTemp[contadorInternoParr]);
 			parrafoEscrito = parrafoEscrito + app.key;
 			contadorInternoParr++;
-		} else if(Character.toUpperCase(parrafoTemp[contadorInternoParr]) == app.key){
+		} else if (Character.toUpperCase(parrafoTemp[contadorInternoParr]) == app.key) {
 			System.out.println(app.key + " es igual a " + parrafoTemp[contadorInternoParr]);
 			parrafoEscrito = parrafoEscrito + Character.toLowerCase(app.key);
 			contadorInternoParr++;
 		} else {
-			System.out.println(app.key + " es diferente a " + parrafoTemp[contadorInternoParr]);
-			audioMalo.trigger();
-			erroresTempParr++;
-			erroresParrafos++;
-			puntajeFinal -= 5;
+			if (contadorInternoParr == 0 || contadorInternoParr == parrafoTemp.length) {
+				if (app.key != ' ') {
+					System.out.println(app.key + " es diferente a " + parrafoTemp[contadorInternoParr]);
+					audioMalo.trigger();
+					erroresTempParr++;
+					erroresParrafos++;
+					puntajeFinal -= 5;
+				}
+
+			} else {
+				System.out.println(app.key + " es diferente a " + parrafoTemp[contadorInternoParr]);
+				audioMalo.trigger();
+				erroresTempParr++;
+				erroresParrafos++;
+				puntajeFinal -= 5;
+			}
 		}
 
 		for (int i = 0; i < parrafoTemp.length; i++) {
@@ -1194,8 +1212,7 @@ public class Logica {
 			if (parrafoTempString.equalsIgnoreCase(parrafoEscrito)) {
 				System.out.println("EQUALS!");
 				audioBueno.trigger();
-				resultadosUsuario[contadorGeneral] = parrafoTempString + "\t"
-						+ tiempo + "\t" + erroresTempParr + "\n";
+				resultadosUsuario[contadorGeneral] = parrafoTempString + "\t" + tiempo + "\t" + erroresTempParr + "\n";
 				parrafoEscrito = "";
 				contadorInternoParr = 0;
 				erroresTempParr = 0;
