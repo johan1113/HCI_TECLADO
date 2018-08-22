@@ -101,7 +101,7 @@ public class Logica {
 		cargarfuente();
 		cargarTexto();
 		cargarArrayTexto();
-		app.imageMode(app.CENTER);
+		app.imageMode(PApplet.CENTER);
 	}
 
 	private void cargarImgs() {
@@ -321,20 +321,20 @@ public class Logica {
 
 			if (mostrartexto) {
 				setFuenteBold(48, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text("Nivel 1", x, y - 250);
 
 				setFuenteBold(80, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text(letras.get(contadorItem - 1).getLetra(), x, y);
 
 				setFuenteBold(35, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text(contadorItem + "/25", x + 500, y - 250);
 
 				if(mostrarErrores) {
 				setFuenteBold(35, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.image(botonError, 81, 98);
 				app.text(erroresLetras, 120, 98);
 				// app.text("PUNTAJE: " + puntajeFinal, x - 430, y - 250);
@@ -365,7 +365,7 @@ public class Logica {
 			if (!animar) {
 				float tamArreglo = letras.size();
 				float puntajeNivel1 = puntajeNiveles[0];
-				int calcularPuntaje = (int) (app.map(puntajeNivel1, 0, tamArreglo, 1, 4));
+				int calcularPuntaje = (int) (PApplet.map(puntajeNivel1, 0, tamArreglo, 1, 4));
 
 				System.out.println("El puntaje real es : " + puntajeNiveles[0] + " El puntaje es: " + calcularPuntaje);
 
@@ -397,26 +397,26 @@ public class Logica {
 			if (mostrartexto) {
 
 				setFuenteBold(48, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text("Nivel 2", x, y - 250);
 
 				setFuenteBold(48, 255);
-				app.textAlign(app.LEFT, app.LEFT);
+				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(palabras.get(contadorItem - 1).getPalabra(), x - 100, y);
 
 				app.textFont(dosisFuente, 48);
 				app.fill(255, 132, 61);
-				app.textAlign(app.LEFT, app.LEFT);
+				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(palabraEscrita  + "_", x - 100, y);
 
 				app.textFont(dosisFuente, 35);
 				app.fill(255);
-				app.textAlign(app.LEFT, app.LEFT);
+				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(contadorItem + "/20", x + 500, y - 250);
 
 				if(mostrarErrores) {
 				setFuenteBold(35, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.image(botonError, 81, 98);
 				app.text(erroresPalabras, 120, 98);
 				}
@@ -439,7 +439,7 @@ public class Logica {
 				app.image(imgs[2], x, y);
 				float tamArreglo = palabras.size();
 				float puntajeNivel2 = puntajeNiveles[1];
-				int calcularPuntaje = (int) (app.map(puntajeNivel2, 0, tamArreglo, 1, 4));
+				int calcularPuntaje = (int) (PApplet.map(puntajeNivel2, 0, tamArreglo, 1, 4));
 
 				System.out.println("El puntaje real es : " + puntajeNiveles[1] + " El puntaje es: " + calcularPuntaje);
 
@@ -471,27 +471,27 @@ public class Logica {
 
 			if (mostrartexto) {
 				setFuenteBold(48, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text("Nivel 3", x, y - 250);
 
 				
 				setFuenteBold(48, 150);
-				app.textAlign(app.LEFT, app.LEFT);
+				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(oraciones.get(contadorItem - 1).getOracion(), x - 30, y + 70, 1000, 300);
 
 				app.textFont(dosisFuente, 48);
 				app.fill(45, 164, 255);
-				app.textAlign(app.LEFT, app.LEFT);
+				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(oracionEscrita  + "_", x - 30 , y + 70, 1000, 300);
 
 				app.textFont(dosisFuente, 35);
 				app.fill(255);
-				app.textAlign(app.LEFT, app.LEFT);
+				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(contadorItem + "/4", x + 500, y - 250);
 
 				if(mostrarErrores) {
 				setFuenteBold(35, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.image(botonError, 81, 98);
 				app.text(erroresOraciones, 120, 98);
 				}
@@ -514,7 +514,7 @@ public class Logica {
 			if (!animar) {
 				float tamArregloOr = oraciones.size();
 				float puntajeNivel3 = puntajeNiveles[2];
-				int calcularPuntajeOr = (int) (app.map(puntajeNivel3, 0, tamArregloOr, 1, 4));
+				int calcularPuntajeOr = (int) (PApplet.map(puntajeNivel3, 0, tamArregloOr, 1, 4));
 
 				System.out
 						.println("El puntaje real es : " + puntajeNiveles[2] + " El puntaje es: " + calcularPuntajeOr);
@@ -547,25 +547,25 @@ public class Logica {
 
 			if (mostrartexto) {
 				setFuenteBold(48, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text("Nivel 4", x, y - 250);
 
 				setFuenteBold(31, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text("Para escuchar el audio, da click sobre el icono de parlante", x, y - 180);
 				
 				setFuenteBold(35, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.text(contadorItem + "/2", x + 500, y - 250);
 
 				app.textFont(dosisFuente, 48);
 				app.fill(255, 61, 99);
-				app.textAlign(app.LEFT, app.LEFT);
+				app.textAlign(PApplet.LEFT, PApplet.LEFT);
 				app.text(parrafoEscrito + "_", x + 200, y + 45, 600, 300);
 
 				if(mostrarErrores) {
 				setFuenteBold(35, 255);
-				app.textAlign(app.CENTER, app.CENTER);
+				app.textAlign(PApplet.CENTER, PApplet.CENTER);
 				app.image(botonError, 81, 98);
 				app.text(erroresParrafos, 120, 98);
 				}
@@ -591,7 +591,7 @@ public class Logica {
 
 			app.textFont(dosisFuente, 35);
 			app.fill(255);
-			app.textAlign(app.CENTER, app.CENTER);
+			app.textAlign(PApplet.CENTER, PApplet.CENTER);
 			app.text("PUNTAJE FINAL: " + puntajeFinal, x, 211);
 			System.out.println("FINAAAAAAAAAAAAAAAAL");
 			break;
@@ -697,7 +697,7 @@ public class Logica {
 		minutos = t.minute();
 		tiempo = segundos + "," + millis;
 		setFuenteRegular(21, 255);
-		app.textAlign(app.LEFT, app.LEFT);
+		app.textAlign(PApplet.LEFT, PApplet.LEFT);
 		app.text(tiempo, 1100, 650);
 	}
 
@@ -888,7 +888,7 @@ public class Logica {
 		}
 		if (nivel == 3) {
 
-			if (app.key == app.ENTER) {
+			if (app.key == PApplet.ENTER) {
 				// sigLetra();
 			} else {
 				System.out.println(tiempo);
@@ -1126,6 +1126,11 @@ public class Logica {
 		}
 
 	}
+	
+	private boolean arregloEspacio() {
+		
+		return true;
+	}
 
 	public void validarOracion() {
 
@@ -1225,7 +1230,7 @@ public class Logica {
 
 	public void generarBaseDeDatos() {
 		BufferedWriter salida;
-		String textoFinal = app.join(resultadosUsuario, "");
+		String textoFinal = PApplet.join(resultadosUsuario, "");
 		// String txtNuevo = app.join(datosUsuario, " "); //Se crea el String que recibe
 		// el texto con las modificaciones y las une
 		try {
