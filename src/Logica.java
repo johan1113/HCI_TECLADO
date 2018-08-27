@@ -30,9 +30,9 @@ public class Logica {
 	 */
 
 	// ATENCIÓN: Coloque aquí el número de prueba que va a realizar//
-	private String numeroDePrueba = "3";
+	private String numeroDePrueba = "2";
 
-	private String nombreTexto = "content_texts/version1.txt";
+	private String nombreTexto = "content_texts/version"+numeroDePrueba+".txt";
 	private String audio1 = "AudioUnoPrueba" + numeroDePrueba + ".mp3";
 	private String audio2 = "AudioDosPrueba" + numeroDePrueba + ".mp3";
 

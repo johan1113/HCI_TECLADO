@@ -1,57 +1,12 @@
-Usuario: sfdfsdf
-Ocupacion: sdcsd
-Carrera: sdcsad
-Edad: sdcdsc
+Usuario: refdf
+Ocupacion: dfdsdf
+Carrera: sfdfasf
+Edad: fsdfsdf
 Genero: Masculino
 
-y	1,144	0
-m	0,923	0
-q	11,977	0
-v	1,51	0
-z	0,424	0
-a	0,156	0
-e	0,566	0
-f	0,513	0
-l	0,460	0
-p	0,637	0
-o	0,800	1
-w	0,606	0
-h	0,552	0
-t	0,677	0
-r	1,960	1
-s	0,478	0
-d	0,532	0
-ñ	0,513	0
-b	1,48	0
-j	0,818	0
-x	0,728	0
-k	2,553	1
-u	0,549	0
-g	1,32	1
-i	0,336	0
-solo	1,316	0
-vida	1,63	0
-boca	0,776	0
-campo	1,670	0
-poder	1,958	0
-habla	0,867	0
-llena	2,636	1
-mente	5,405	0
-rosado	3,154	0
-educada	4,99	0
-ignorar	1,970	0
-preparar	2,699	0
-personas	2,849	2
-iglesias	3,798	2
-brillante	3,673	0
-fabricaron	6,545	5
-habitantes	2,299	0
-laberintos	2,155	0
-obedecemos	4,448	0
-cabalgamientos	4,135	0
-caminando en linea recta no puede uno llegar muy lejos	11,642	0
-para los vanidosos todos los demas hombres son admiradores	13,486	2
-solo hay que exigir a cada quien lo que cada uno puede hacer	122,-119059	2
-me creia rico con una flor unica y resulta que no tengo mas que una rosa ordinaria	19,447	4
-fue el tiempo que pasaste con tu rosa lo que la hizo tan importante	36,924	5
-a mi me habria gustado empezar esta historia a la manera de los cuentos de hadas	30,483	40
+g	2,276	0
+p	4,890	0
+t	8,810	0
+m	0,516	0
+a	0,247	0
+nullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnull
