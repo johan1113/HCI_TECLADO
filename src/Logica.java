@@ -159,7 +159,6 @@ public class Logica {
 		}
 
 		botonError = app.loadImage("../data/botonError.png");
-
 	}
 
 	private void inicializarVars() {
@@ -262,6 +261,7 @@ public class Logica {
 
 	public void pantallas() {
 		app.image(imgs[0], x, y);
+
 		switch (nivel) {
 		// Inicio
 		case 0:
@@ -816,7 +816,7 @@ public class Logica {
 				if (!isPlayingSong) {
 					parr1.trigger();
 					tiempoN4 = true;
-					comenzarTiempo();
+					comenzarTiempo(11000);
 				}
 
 			} else if (contadorItem == 2) {
@@ -826,7 +826,7 @@ public class Logica {
 				}
 				if (!isPlayingSong) {
 					parr2.trigger();
-					comenzarTiempo();
+					comenzarTiempo(19000);
 					tiempoN4 = true;
 				}
 
@@ -836,7 +836,7 @@ public class Logica {
 		}
 	}
 
-	private void comenzarTiempo() {
+	private void comenzarTiempo(int time) {
 
 		Thread t = new Thread(new Runnable() {
 
@@ -846,7 +846,7 @@ public class Logica {
 				try {
 
 					isPlayingSong = true;
-					Thread.sleep(12000);
+					Thread.sleep(time);
 					isPlayingSong = false;
 
 				} catch (Exception e) {

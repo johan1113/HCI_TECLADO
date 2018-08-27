@@ -1,9 +1,2 @@
-Usuario: df
-Ocupacion: df
-Carrera: dfv
-Edad: fdv
-Genero: Masculino
-
-n	3,465	5
-p	6,502	11
-nullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnull
+nullla verdadera ignorancia no es la ausencia de conocimiento sino la negativa a adquirirlo	19,953	6
+nullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnull
