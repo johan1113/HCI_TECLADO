@@ -46,7 +46,7 @@ public class Logica {
 	private Minim minim;
 	private PFont dosisFuente, dosisFuenteReg, dosisCampos;
 	private int x, y;
-	private PImage imgs[], planetas[], emoji[], emoji2[], trans[], nivel2[], nivel3[], nivel4[], botonError;
+	private PImage imgs[], formulario, planetas[], emoji[], emoji2[], trans[], nivel2[], nivel3[], nivel4[], botonError, instrucciones_nivel[];
 	private int contadorItem, opacidad, imgOpacidad;
 	private int contadorInternoPal, contadorInternoOr, contadorInternoParr, contadorGeneral;
 	int frame = 0;
@@ -159,6 +159,12 @@ public class Logica {
 		}
 
 		botonError = app.loadImage("../data/botonError.png");
+		
+		instrucciones_nivel = new PImage[4];
+		
+		for(int i = 0; i < instrucciones_nivel.length; i++) {
+			instrucciones_nivel[i] = app.loadImage("../data/instrucciones_nivel_" + (i+1) + ".png");
+		}
 	}
 
 	private void inicializarVars() {
@@ -635,8 +641,28 @@ public class Logica {
 		case 16:
 
 			break;
-
+			
+		case 17:
+			
+			app.image(instrucciones_nivel[0], x, y);
+			break;
+			
+		case 18:
+			
+			app.image(instrucciones_nivel[1], x, y);
+			break;
+		
+		case 19:
+			
+			app.image(instrucciones_nivel[2], x, y);
+			break;
+			
+		case 20:
+			
+			app.image(instrucciones_nivel[3], x, y);
+			break;
 		}
+		
 		if (nivel != 11 && nivel != 0) {
 			cp5.get("").hide();
 			cp5.get(" ").hide();
@@ -772,9 +798,15 @@ public class Logica {
 			// --------HERE------------
 		} else if (nivel == 1) {
 			if (app.mouseX > 508 && app.mouseX < 700 && app.mouseY > 585 && app.mouseY < 637) {
-				nivel = 2;
+				nivel = 17;
 				imgOpacidad = 0;
 			}
+		} else if (nivel == 17) {
+			if (app.mouseX > 505 && app.mouseX < 695 && app.mouseY > 545 && app.mouseY < 600) {
+				nivel = 2;
+				//imgOpacidad = 0;
+			}
+			
 		} else if (nivel == 2) {
 			imgOpacidad = 0;
 			opacidad = 0;
@@ -787,26 +819,44 @@ public class Logica {
 				imgOpacidad = 0;
 				contadorItem = 1;
 				reiniciarTiempo();
-				nivel = 13;
+				nivel = 18;
 
 			}
+		} else if (nivel == 18) {
+			if (app.mouseX > 505 && app.mouseX < 695 && app.mouseY > 530 && app.mouseY < 590) {
+				nivel = 13;
+				imgOpacidad = 0;
+			}
+			
 		} else if (nivel == 6) {
 			if (app.mouseX > 511 && app.mouseX < 720 & app.mouseY > 514 && app.mouseY < 568) {
 				imgOpacidad = 0;
 				opacidad = 0;
 				contadorItem = 1;
 				reiniciarTiempo();
-				nivel = 14;
+				nivel = 19;
 
 			}
+		} else if (nivel == 19) {
+			if (app.mouseX > 505 && app.mouseX < 695 && app.mouseY > 535 && app.mouseY < 590) {
+				nivel = 14;
+				imgOpacidad = 0;
+			}
+			
 		} else if (nivel == 8) {
 			if (app.mouseX > 499 && app.mouseX < 705 & app.mouseY > 515 && app.mouseY < 567) {
 				opacidad = 0;
 				contadorItem = 1;
 				imgOpacidad = 0;
 				reiniciarTiempo();
-				nivel = 15;
+				nivel = 20;
 			}
+		} else if (nivel == 20) {
+			if (app.mouseX > 505 && app.mouseX < 695 && app.mouseY > 535 && app.mouseY < 590) {
+				nivel = 15;
+				imgOpacidad = 0;
+			}
+			
 		} else if (nivel == 9) {
 			if (contadorItem == 1) {
 
