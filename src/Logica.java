@@ -30,7 +30,7 @@ public class Logica {
 	 */
 
 	// ATENCIÓN: Coloque aquí el número de prueba que va a realizar//
-	private String numeroDePrueba = "2";
+	private String numeroDePrueba = "1";
 
 	private String nombreTexto = "content_texts/version"+numeroDePrueba+".txt";
 	private String audio1 = "AudioUnoPrueba" + numeroDePrueba + ".mp3";
@@ -199,12 +199,14 @@ public class Logica {
 		minim = new Minim(app);
 		audioBueno = minim.loadSample("../data/Bueno.mp3", 512);
 		audioMalo = minim.loadSample("../data/Malo.mp3", 512);
-		parr1 = minim.loadSample("../data/" + audio1, 512);
-		parr2 = minim.loadSample("../data/" + audio2, 512);
+		//parr1 = minim.loadSample("../data/" + audio1, 512);
+		//parr2 = minim.loadSample("../data/" + audio2, 512);
+		parr1 = minim.loadSample("../data/audios_dictado/" + audio1, 512);
+		parr2 = minim.loadSample("../data/audios_dictado/" + audio2, 512);
 		erroresTempLetra = 0;
 		erroresTempOr = 0;
 		erroresTempParr = 0;
-		erroresLetras = 0;
+		erroresLetras = 0;	
 		erroresOraciones = 0;
 		erroresPalabras = 0;
 		erroresParrafos = 0;

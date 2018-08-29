@@ -4,29 +4,54 @@ Carrera:
 Edad: 
 Genero: null
 
-g	1,292	0
-p	1,114	1
-t	0,905	0
-m	0,844	0
-a	0,602	0
-v	0,746	0
-q	0,602	0
-l	20,692	1
-e	18,782	1
-x	2,264	0
-i	1,741	0
-y	1,138	0
+y	1,158	0
+m	0,820	0
+q	0,712	0
+v	1,80	0
+z	0,709	0
+a	0,789	0
+e	0,960	0
+f	0,836	0
+n	0,749	0
+p	0,962	1
+o	0,750	0
+w	0,680	0
+h	0,879	0
+t	0,680	0
+r	0,722	0
+s	0,940	0
 d	0,674	0
-r	0,655	0
-b	0,924	0
-h	1,352	0
-u	0,746	0
-o	0,800	0
-s	0,872	0
-f	0,816	0
-w	0,652	0
-k	1,13	0
-n	0,798	0
-j	0,941	0
-ñ	0,886	0
-nullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnullnull
+ñ	0,873	0
+b	0,895	0
+j	0,851	0
+x	0,854	0
+k	1,180	1
+u	0,840	0
+g	0,820	0
+i	0,909	0
+solo	1,224	0
+vida	1,376	0
+boca	1,120	0
+campo	1,234	0
+poder	1,189	0
+habla	1,424	1
+llena	1,787	0
+mente	1,903	0
+rosado	1,390	0
+educada	1,819	0
+ignorar	4,212	1
+preparar	1,606	0
+personas	1,841	0
+iglesias	3,220	0
+brillante	5,590	1
+fabricaron	1,954	0
+habitantes	2,459	0
+laberintos	3,854	0
+obedecemos	3,109	0
+cabalgamientos	2,407	0
+caminando en linea recta no puede uno llegar muy lejos	9,743	1
+para los vanidosos todos los demas hombres son admiradores	8,151	1
+solo hay que exigir a cada quien lo que cada uno puede hacer	7,760	1
+me creia rico con una flor unica y resulta que no tengo mas que una rosa ordinaria	14,569	5
+fue el tiempo que pasaste con tu rosa lo que la hizo tan importante	13,217	7
+a mi me habria gustado empezar esta historia a la manera de los cuentos de hadas	11,195	1
